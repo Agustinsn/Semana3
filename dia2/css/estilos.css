@@ -13,5 +13,34 @@ a{
     text-decoration: none;
 }
 .container{
-
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px 100px;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+}
+nav>ul>li{
+    margin: 0 5px;
+}
+#btn-registro{
+    background-color: var(--color-primario);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+#btn-login{
+    background-color: white;
+    border: 1px solid var(--color-primario);
+    padding: 10px 20px;
+    border-radius: 8px;
 }
