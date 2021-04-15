@@ -1,47 +1,110 @@
+/* variables */
 :root{
     --color-primario:#FB8F1D;
-}
-
-*{
-    margin: 0;
-    padding: 0;
+  }
+  
+  /* reset */
+  *{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    border: 1px solid lightgray;
-}
-a{
-    color: black;
+    border:1px solid lightgray;
+  }
+  /* agregando fuente local */
+  @font-face {
+    /* nombre, como lo vamos a usar */
+    font-family: 'Inter';
+    /* la ubicación */
+    /* ../ subo un nivel en el directorio de carpetas */
+    src: url('/dia2/assets/fonts/Inter-Regular.woff');
+  }
+  
+  /* quitemos estilos de a */
+  a{
+    color:black;
     text-decoration: none;
-}
-.container{
-    max-width: 1000px;
-    padding: 20px;
-    margin: 20px 100px;
-}
-ul{
+  }
+  
+  /* remover estilos lista */
+  ul{
     list-style-type: none;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-nav>ul{
-    display: flex;
-    align-items: center;
-}
-nav>ul>li{
-    margin: 0 5px;
-}
-#btn-registro{
-    background-color: var(--color-primario);
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-}
-#btn-login{
+  }
+  
+  .container{
+    max-width:1000px;
+    padding:20px;
+    margin:0 auto;
+    /* esto aplica para margin y padding */
+    /* marginx2: arribaabajo derechaizquierda */
+    /* marginx4: arriba derecha abajo izquierda */
+  }
+  
+  /* estilos navegación */
+  
+  nav{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    font-family: 'Open Sans',Arial, sans-serif;
+    font-size:14px;
+  }
+  
+  nav > ul{
+    display:flex;
+    align-items:center;
+  }
+  
+  nav > ul > li{
+    margin:0 5px;
+  }
+  
+  #btn-register{
+    /* var(--nombrevariable) */
+    background-color:var(--color-primario);
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+  }
+  
+  #btn-login{
     background-color: white;
-    border: 1px solid var(--color-primario);
-    padding: 10px 20px;
-    border-radius: 8px;
-}
+    border:1px solid var(--color-primario);
+    padding:10px 20px;
+    border-radius:8px;
+  }
+  
+  /* estilos header */
+  
+  header{
+    display:flex;
+  }
+  
+  .header-content{
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:30px;
+  }
+  
+  .header-content > h1{
+    font-family: 'Inter';
+  }
+  .header-content>small{
+font-family: 'Open sans', sans-serif;
+  }
+  .header-content> input{
+padding: 12px;
+border-radius: 6px;
+  }
+  .header-content> button{
+      background-color: var(--color-primario);
+      padding: 12px;
+      color: white;
+      width: 150px;
+      border-radius: 10px;
+      font-family: 'Open Sans', sans-serif;
+  }
+  header > img{
+    width:55%;
+  }
