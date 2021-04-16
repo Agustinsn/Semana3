@@ -1,3 +1,5 @@
+/* agregando fuentes por import*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 /* variables */
 :root{
     --color-primario:#FB8F1D;
@@ -78,17 +80,16 @@
   header{
     display:flex;
   }
-  
+  .header-content> h1{
+      font-family:'Playfair Display', serif ;
+      font-weight: 700;
+  }
   .header-content{
     width:45%;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding:30px;
-  }
-  
-  .header-content > h1{
-    font-family: 'Inter';
   }
   .header-content>small{
 font-family: 'Open sans', sans-serif;
